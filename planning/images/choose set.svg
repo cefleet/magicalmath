@@ -14,7 +14,7 @@
    id="svg3033"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="slide 2.svg"
+   sodipodi:docname="choose set.svg"
    inkscape:export-filename="C:\Users\Jeffery Barnett\Documents\GitHub\magicalmath\planning\images\slide 2.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -28,8 +28,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.61399264"
-     inkscape:cx="660.23799"
-     inkscape:cy="389.1059"
+     inkscape:cx="516.09945"
+     inkscape:cy="428.19432"
      inkscape:current-layer="layer1"
      id="namedview3037"
      showgrid="false"
@@ -57,15 +57,15 @@
     <text
        xml:space="preserve"
        style="font-size:131.46173096px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Andalus;-inkscape-font-specification:Andalus"
-       x="89.023712"
-       y="189.03734"
+       x="264.51553"
+       y="117.0452"
        id="text3042"
        sodipodi:linespacing="125%"
        transform="scale(0.88405292,1.131154)"><tspan
          sodipodi:role="line"
          id="tspan3044"
-         x="89.023712"
-         y="189.03734">Choose a catagory</tspan></text>
+         x="264.51553"
+         y="117.0452">Choose a set</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot3046"
@@ -79,29 +79,98 @@
          id="flowPara3052" /></flowRoot>    <rect
        style="fill:#241c1c;fill-opacity:0.22082184"
        id="rect3182"
-       width="361.6192"
-       height="267.18362"
-       x="31.383902"
-       y="396.2951"
-       ry="29.707043" />
+       width="198.49809"
+       height="146.66101"
+       x="56.698704"
+       y="194.33829"
+       ry="16.306631" />
     <rect
        style="fill:#241c1c;fill-opacity:0.22082184"
-       id="rect3182-4"
-       width="361.6192"
-       height="267.18362"
-       x="629.65521"
-       y="391.12964"
-       ry="29.707043" />
-    <text
-       xml:space="preserve"
-       style="font-size:110.56327057px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Andalus;-inkscape-font-specification:Andalus"
-       x="448.06967"
-       y="549.79126"
-       id="text3212"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3214"
-         x="448.06967"
-         y="549.79126">or</tspan></text>
+       id="rect3182-7"
+       width="198.49809"
+       height="146.66101"
+       x="303.30817"
+       y="193.55957"
+       ry="16.306631" />
+    <rect
+       style="fill:#241c1c;fill-opacity:0.22082184"
+       id="rect3182-5"
+       width="198.49809"
+       height="146.66101"
+       x="549.91766"
+       y="191.93088"
+       ry="16.306631" />
+    <rect
+       style="fill:#241c1c;fill-opacity:0.22082184"
+       id="rect3182-1"
+       width="198.49809"
+       height="146.66101"
+       x="796.52716"
+       y="183.78746"
+       ry="16.306631" />
+    <rect
+       style="fill:#241c1c;fill-opacity:0.22082184"
+       id="rect3182-3"
+       width="198.49809"
+       height="146.66101"
+       x="59.965664"
+       y="381.39716"
+       ry="16.306631" />
+    <rect
+       style="fill:#241c1c;fill-opacity:0.22082184"
+       id="rect3182-7-3"
+       width="198.49809"
+       height="146.66101"
+       x="306.57513"
+       y="380.61844"
+       ry="16.306631" />
+    <rect
+       style="fill:#241c1c;fill-opacity:0.22082184"
+       id="rect3182-5-8"
+       width="198.49809"
+       height="146.66101"
+       x="553.18463"
+       y="378.98975"
+       ry="16.306631" />
+    <rect
+       style="fill:#241c1c;fill-opacity:0.22082184"
+       id="rect3182-1-4"
+       width="198.49809"
+       height="146.66101"
+       x="799.79413"
+       y="370.84634"
+       ry="16.306631" />
+    <rect
+       style="fill:#241c1c;fill-opacity:0.22082184"
+       id="rect3182-8"
+       width="198.49809"
+       height="146.66101"
+       x="60.159035"
+       y="565.28888"
+       ry="16.306631" />
+    <rect
+       style="fill:#241c1c;fill-opacity:0.22082184"
+       id="rect3182-7-8"
+       width="198.49809"
+       height="146.66101"
+       x="306.76849"
+       y="564.51019"
+       ry="16.306631" />
+    <rect
+       style="fill:#241c1c;fill-opacity:0.22082184"
+       id="rect3182-5-9"
+       width="198.49809"
+       height="146.66101"
+       x="553.37805"
+       y="562.88147"
+       ry="16.306631" />
+    <rect
+       style="fill:#241c1c;fill-opacity:0.22082184"
+       id="rect3182-1-3"
+       width="198.49809"
+       height="146.66101"
+       x="799.98755"
+       y="554.73804"
+       ry="16.306631" />
   </g>
 </svg>
