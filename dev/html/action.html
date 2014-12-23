@@ -7,12 +7,14 @@
     </head>
     <body>
         <div id='container'>
-            <span id='first_number'></span>
-            <span id='oporater'></span>
-            <span id='second_number'></span>    
-            <span id='eqauls'>=</span>
-            <span id='guess'></span>
-            <div id='linkList'></div>
+            <div id='equation' style='margin:40px'>
+                <span id='first_number'></span>
+                <span id='oporater'></span>
+                <span id='second_number'></span>    
+                <span id='eqauls'>=</span>
+                <span id='guess'></span>
+            </div>
+            <div id='linkList'>
                  <a class='button_link' id='guess_0'>0</a>
                  <a class='button_link' id='guess_1'>1</a>
                  <a class='button_link' id='guess_2'>2</a>
@@ -24,7 +26,38 @@
                  <a class='button_link' id='guess_8'>8</a>
                  <a class='button_link' id='guess_9'>9</a>
           </div>
-          <a href='results.html'>make guess</a>
+              <a id='make_guess' class='button'>make guess</a>
         </div>
+        <script>
+        
+        //gets the sets from saved
+        var first_number = localStorage.getItem('set');
+        //gets the holder from page
+        var first_number_holder = document.getElementById('first_number');
+        //puts the value in the holder
+        first_number_holder.innerHTML = first_number;
+        
+        //gets the catagory from saved
+        var oporater = localStorage.getItem('catagory');
+        //gets the holder from page
+        var oporater_holder = document.getElementById('oporater');
+        //puts the value in the holder
+        oporater_holder.innerHTML = oporater;
+        
+        
+        var putNumber = function(){
+            
+        };
+        
+        //gets the links
+        var links = document.getElementsByClassName('button_link');
+        
+        //loops through links   
+        for(var i = 0; i < links.length; i++){
+            
+            //listens for clicks
+            links[i].addEventListener('click', putNumber);
+        }
+        </script>
     </body>
 </html>
