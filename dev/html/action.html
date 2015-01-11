@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>
-            Magical Math
+           Magical Math
         </title>
         <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     </head>
@@ -35,18 +35,37 @@
         //gets the holder from page
         var first_number_holder = document.getElementById('first_number');
         //puts the value in the holder
+        
+        first_number = first_number.replace('set_','');
         first_number_holder.innerHTML = first_number;
         
         //gets the catagory from saved
         var oporater = localStorage.getItem('catagory');
         //gets the holder from page
+        if(oporater === 'addition'){
+            oporater = '+';
+        } else if(oporater === 'multiplication'){
+            oporater = 'x';
+        }
         var oporater_holder = document.getElementById('oporater');
+        
         //puts the value in the holder
         oporater_holder.innerHTML = oporater;
         
         
         var putNumber = function(){
-            
+           var num = this.id.replace('guess_','');
+           
+           var guess = document.getElementById('guess');
+           console.log(guess);
+           var orgNum = guess.innerHTML;
+           if(!orgNum){
+               orgNum = '';
+           }
+           var n = String(orgNum)+String(guess);
+           guess.innerHTML = n;
+           
+
         };
         
         //gets the links
