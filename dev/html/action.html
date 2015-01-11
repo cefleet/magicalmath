@@ -57,12 +57,22 @@
            var num = this.id.replace('guess_','');
            
            var guess = document.getElementById('guess');
-           console.log(guess);
            var orgNum = guess.innerHTML;
            if(!orgNum){
                orgNum = '';
            }
-           var n = String(orgNum)+String(guess);
+           console.log(orgNum);
+           console.log(num);
+           
+           var n = String(orgNum)+String(num);
+           
+           //added by clint
+           //if the length of the guess is greater then 40
+           //then cut off the last number
+           if(n.length > 3){
+               var n = n.substring(0, n.length-1);
+           }
+           
            guess.innerHTML = n;
            
 
