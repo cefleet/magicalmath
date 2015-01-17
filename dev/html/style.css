@@ -1,14 +1,11 @@
 body {
-    margin: 0;
+    margin:0;
     padding:0;
+    background:url('covermm.png') no-repeat;
+    background-size: cover;
 }
 
-#container {
-    background:url('covermm.png') no-repeat;
-    width:800px;
-    height:460px;
-    overflow:hidden;
-}
+
 
 .button_link, .button {
 	font-weight:bold;
