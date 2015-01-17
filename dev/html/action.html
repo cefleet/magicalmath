@@ -5,10 +5,13 @@
         </title>
         <link rel="stylesheet" href="style.css" type="text/css" media="all" />
         <script src='lib/SimpleMathGame.js'></script>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"> 
+
     </head>
     <body>
         <div id='container'>
-            <div id='equation' style='margin:40px'>
+        <div id='final'></div>
+            <div id='equation'>
                 <span id='first_number'></span>
                 <span id='oporater'></span>
                 <span id='second_number'></span>    
@@ -26,8 +29,11 @@
                  <a class='button_link' id='guess_7'>7</a>
                  <a class='button_link' id='guess_8'>8</a>
                  <a class='button_link' id='guess_9'>9</a>
-          </div>
-              <a id='make_guess' class='button'>make guess</a>
+            </div>
+            <a id='make_guess' class='button'>make guess</a>
+            <a id='erase' class='button'>Erase</a>
+            <div id='results'></div>
+
         </div>
         <script>
         
@@ -42,6 +48,8 @@
         first_number_holder.innerHTML = first_number;
         
         var oporater = localStorage.getItem('catagory');
+        
+        var results_holder = document.getElementById('results');
         
         var mOp;
         //gets the holder from page
@@ -104,18 +112,43 @@
           var value = document.getElementById('guess');
           attempt(value.innerHTML);
         });
+        
+        var erase = document.getElementById('erase');
+        erase.addEventListener('click', function(){
+            var value = document.getElementById('guess');
+            value.innerHTML = '';
+        });
 
         var attempt = function(value){
           
-          var results = MG.evaluateQuestion(value);
+            var results = MG.evaluateQuestion(value);
 
-          alert(results.result);
+            results_holder.innerHTML = results.result;
 
-          if(results.result !== 'win' && results.result !=='lose'){
-            loadEquation(results.nextQuestion);
-          } else {
-            alert('You '+results.result+'! At this point you will be redirected');
-          }
+            if(results.result !== 'win' && results.result !=='lose'){
+                loadEquation(results.nextQuestion);
+            } else {
+                var final = document.getElementById('final');
+                if(results.result === 'win'){
+                    
+                    var c = '<a class="button_link" id="choose_set">Choose Set</a>';
+                    final.innerHTML = c;
+                    var b = document.getElementById('choose_set');
+                    b.addEventListener('click',function(){
+                       window.location.href = 'choose_set.html'; 
+                    });
+                    
+                } else if(results.result === 'lose') {
+                    var c = '<a class="button_link" id="try_again">Try Again</a>';
+                    final.innerHTML = c;
+                    
+                    var b = document.getElementById('try_again');
+                    
+                    b.addEventListener('click',function(){
+                       window.location.href = 'action.html'; 
+                    });
+                }
+            }
         };
 
         var update = function(id,value){
